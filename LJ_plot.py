@@ -8,8 +8,8 @@ import matplotlib.animation as animation
 df = pd.read_csv("LJ_data.csv")
 
 # Defining the exact enviroment dimensions
-BOX_WIDTH = 5.0e-9  
-BOX_HEIGHT = 5.0e-9
+BOX_WIDTH = 10.0e-9  
+BOX_HEIGHT = 10.0e-9
 
 # 2. Setup figure canvas
 fig, ax = plt.subplots(figsize=(8, 8))
