@@ -1,6 +1,6 @@
 # 2D Lennard-Jones Molecular Dynamics Simulation
 
-A 2D Molecular Dynamics (MD) simulation written in **C** to model an Argon gas/liquid system, coupled with a **Python** analysis and visualization pipeline. 
+A 2D Molecular Dynamics (MD) simulation written in C to model an Argon gas/liquid system, coupled with a Python analysis and visualisation pipeline. 
 
 The simulation computes atomic interactions using the empirical Lennard-Jones potential and integrates the classical equations of motion using the Velocity Verlet algorithm.
 
@@ -14,18 +14,18 @@ $$V(r) = 4\varepsilon \left[ \left(\frac{\sigma}{r}\right)^{12} - \left(\frac{\s
 
 ### Key System Parameters:
 * **Target Substance:** Argon ($\sigma = 0.34$ nm, $\varepsilon = 1.65 \times 10^{-21}$ J)
-* **Ensemble:** Microcanonical ($NVE$) — constant number of particles, volume, and total energy.
-* **Integrator:** **Velocity Verlet**. This symplectic integrator preserves phase space volume and ensures long-term energy conservation without systemic drift.
+* **Ensemble:** Microcanonical ($NVE$) - constant number of particles, volume, and total energy.
+* **Integrator:** Velocity Verlet. This symplectic integrator preserves phase space volume and ensures long-term energy conservation without systemic drift.
 
 ---
 
 ## Project Structure
 
 * `LJ_Potential.c` - High-performance core physics engine. Computes pairwise forces, handles boundary conditions, and integrates particle positions and velocities.
-* `LJ_plot.py` - Python script reading output trajectories and rendering a smooth 2D animation of the particles.
+* `LJ_plot.py` - Python script reading output trajectories and rendering a 2D animation of the particles.
 * `Energy_plot.py` - Data analysis script checking for thermodynamic energy conservation.
-* `energy_plot.png` - Exported diagnostic plot showing kinetic, potential, and total system energy.
-* `lj_simulation.gif` - Smooth animation of the simulated physical system.
+* `energy_plot.png` - Exported diagnostic plot showing kinetic, potential, and total energy of the sysem.
+* `lj_simulation.gif` - Animation of the simulated physical system.
 
 ---
 
